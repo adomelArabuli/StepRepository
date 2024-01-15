@@ -14,7 +14,25 @@ namespace DoitMT
             {
                 Console.WriteLine("test");
             }
+
+            Person person = new Person();
+            person.Name = "Gia";
+
+            person.Dispose();
+
             Console.WriteLine();
+        }
+
+        class Person : IDisposable
+        {
+            public string Name { get; set; }
+
+            public void Dispose()
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.SuppressFinalize(this);
+            }
         }
     }
 }
