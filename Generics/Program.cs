@@ -1,5 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
 using System.Collections;
+using System.Linq.Expressions;
+using static Generics.Program;
 
 namespace Generics
 {
@@ -45,6 +47,7 @@ namespace Generics
 
             #endregion
 
+            #region MyList
             //var list = new MyList<string>();
             //list.Add("Hello");
             //list.Add("World");
@@ -54,12 +57,66 @@ namespace Generics
 
             //BenchmarkRunner.Run(typeof(Program).Assembly); // პირველი ვარიანტი
             //BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);// მეორე ვარიანტი ბენჩმარკის გაშვების
+            #endregion
 
             // dagvrcha - nested ტიპები Generic კლასის შიგნით; Generic ინტერფეისების შექმნა;
 
-            GenericMethods gm = new GenericMethods();
-            Console.WriteLine(gm.FindMaximum(100, 1000));
-            Console.WriteLine(gm.FindMaximum("Hello","World1"));
+            //GenericMethods gm = new GenericMethods();
+            //Console.WriteLine(gm.FindMaximum(100, 1000));
+            //Console.WriteLine(gm.FindMaximum("Hello","World1"));
+
+            GenericContainer<int>.NestedGenericClass<string> nestedGenericClass = new GenericContainer<int>.NestedGenericClass<string>("Some data");
+            nestedGenericClass.GetData();
+
+        }
+
+        public interface GenericInterface<T>
+        {
+            T GetData();
+        }
+
+        class SomeClass : GenericInterface<int>
+        {
+            public int GetData()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        class MyClass : GenericInterface<string>
+        {
+            public string GetData()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public class GenericContainer<T>
+        {
+            private T Data;
+            public GenericContainer(T value)
+            {
+                Data = value;
+            }
+
+            public T GetData()
+            {
+                return Data;
+            }
+
+            public class NestedGenericClass<U>
+            {
+                private U Data;
+                public NestedGenericClass(U value)
+                {
+                    Data = value;
+                }
+
+                public U GetData()
+                {
+                    return Data;
+                }
+            }
 
         }
 
