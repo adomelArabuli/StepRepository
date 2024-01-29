@@ -44,6 +44,7 @@ namespace Delegates
             //{
             //    Console.WriteLine($"the sum is: {x + y}");
             //};
+            //addDelegate(1, 2);
 
             //// => 
             //OperationDelegate subtractDelegate = (x, y) =>
