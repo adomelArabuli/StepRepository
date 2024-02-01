@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Dele
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csproj", "{C6B338E5-D598-4218-BDD6-306DBBADE7B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonymousMethodsLambdaExpressionsRegex", "AnonymousMethodsLambdaExpressionsRegex\AnonymousMethodsLambdaExpressionsRegex.csproj", "{5C5CE066-3922-47B1-A7BC-1F74AA9AFE38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonymousMethodsLambdaExpressionsRegex", "AnonymousMethodsLambdaExpressionsRegex\AnonymousMethodsLambdaExpressionsRegex.csproj", "{5C5CE066-3922-47B1-A7BC-1F74AA9AFE38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{7DF7A5CD-88E0-4856-9356-4C22F7232DBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5C5CE066-3922-47B1-A7BC-1F74AA9AFE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C5CE066-3922-47B1-A7BC-1F74AA9AFE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C5CE066-3922-47B1-A7BC-1F74AA9AFE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF7A5CD-88E0-4856-9356-4C22F7232DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF7A5CD-88E0-4856-9356-4C22F7232DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF7A5CD-88E0-4856-9356-4C22F7232DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF7A5CD-88E0-4856-9356-4C22F7232DBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

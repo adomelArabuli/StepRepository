@@ -56,6 +56,7 @@ namespace AnonymousMethodsLambdaExpressionsRegex
             // Quantifiers : +
 
             #endregion
+
         }
     }
 }
