@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStreamPartOne", "FileSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFileInfoDirectoryDirectoryInfo", "FileFileInfoDirectoryDirectoryInfo\FileFileInfoDirectoryDirectoryInfo.csproj", "{A6A63F20-7933-48C3-A744-920F98465F2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization&Deserialization", "Serialization&Deserialization\Serialization&Deserialization.csproj", "{DE3FC4FB-6ABA-4EAD-B453-1390EE3D9A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serialization&Deserialization", "Serialization&Deserialization\Serialization&Deserialization.csproj", "{DE3FC4FB-6ABA-4EAD-B453-1390EE3D9A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attributes&Reflection", "Attributes&Reflection\Attributes&Reflection.csproj", "{358C9126-FD50-4945-B143-95700A522ADF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{DE3FC4FB-6ABA-4EAD-B453-1390EE3D9A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE3FC4FB-6ABA-4EAD-B453-1390EE3D9A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE3FC4FB-6ABA-4EAD-B453-1390EE3D9A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358C9126-FD50-4945-B143-95700A522ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358C9126-FD50-4945-B143-95700A522ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358C9126-FD50-4945-B143-95700A522ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358C9126-FD50-4945-B143-95700A522ADF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
